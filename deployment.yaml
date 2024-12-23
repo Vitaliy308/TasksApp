@@ -2,6 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: task-manager
+  namespace: jenkins
   labels:
     app: task-manager
 spec:
@@ -16,6 +17,6 @@ spec:
     spec:
       containers:
       - name: task-manager
-        image: 192.168.0.14:5000/task-manager:a5a2231
+        image: 192.168.0.14:5000/task-manager:3921d18
         ports:
-        - containerPort: 8000
+        - containerPort: 3008

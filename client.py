@@ -4,7 +4,7 @@ import json
 
 def client():
     client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-    client_socket.connect(('localhost', 3008))
+    client_socket.connect(('localhost', 30008))
 
     print("[INFO] Подключен к серверу.")
 

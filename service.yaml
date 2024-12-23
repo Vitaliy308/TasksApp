@@ -5,8 +5,9 @@ metadata:
 spec:
   selector:
     app: task-manager
+  type: NodePort    
   ports:
     - protocol: TCP
-      port: 8000
-      targetPort: 8000
-  type: NodePort
+      port: 3008
+      targetPort: 3008
+      nodePort: 30008
